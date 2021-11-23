@@ -21,14 +21,14 @@ export const homeObjOne = {
 }
 
 export const homeObjTwo = {
-    id: 'about',
+    id: 'discover',
     lightBg: true,
     lightText: false,
     lightTextDesc: true,
     topLine: 'Insert Top Line Here',
     headline: 'Insert Headline here',
     description: 'Insert Description Here',
-    buttonLabel: 'Get Started',
+    buttonLabel: 'Learn More',
     imgStart: true,
     img: doctor,
     alt: 'doctor',
@@ -39,14 +39,14 @@ export const homeObjTwo = {
 }
 
 export const homeObjThree= {
-    id: 'about',
+    id: 'signup',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
     topLine: 'Insert Top Line Here',
     headline: 'Insert Headline here',
     description: 'Insert Description Here',
-    buttonLabel: 'Get Started',
+    buttonLabel: 'Start Now',
     imgStart: false,
     img: chat,
     alt: 'chat',

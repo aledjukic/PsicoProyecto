@@ -19,7 +19,10 @@ const Navbar = ({toggle})  => {
                         <NavLinks to="discover" onClick={toggle}>Discover</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="sign-up" onClick={toggle}>Sign up</NavLinks>
+                        <NavLinks to="services" onClick={toggle}>Services</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to="signup" onClick={toggle}>Sign up</NavLinks>
                     </NavItem>
                 </NavMenu>
                 <NavBtn>

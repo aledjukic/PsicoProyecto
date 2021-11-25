@@ -3,12 +3,13 @@ import Video from '../../video/video.mp4'
 import {HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight} from './HeroElements'
 import {Button} from '../ButtonElements'
 
-const Hero = () => {
+const Hero = ({open}) => {
     const [hover, setHover] = useState(false)
 
     const onHover = () => {
         setHover(!hover)
     }
+
 
     return (
         <HeroContainer id="home">
@@ -19,7 +20,7 @@ const Hero = () => {
                 <HeroH1> Introduzca titulo aqui </HeroH1>
                 <HeroP> bla bla bla bla bla bla bla bla bla bla </HeroP>
                 <HeroBtnWrapper>
-                   <Button to="signup" onMouseEnter = {onHover} onMouseLeave={onHover} primary='true' dark='true'>
+                   <Button to="/signup" onClick={open} onMouseEnter = {onHover} onMouseLeave={onHover}>
                        Get Started {hover ? <ArrowForward/> : <ArrowRight />}
                    </Button> 
                 </HeroBtnWrapper>

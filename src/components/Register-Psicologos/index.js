@@ -1,5 +1,4 @@
 import React from 'react'
-import {Button} from '../ButtonElements'
 import {Container,
     FormWrap,
     Icon,
@@ -9,20 +8,19 @@ import {Container,
     FormLabel,
     FormInput,
     FormButton,
-    Text
-    } from './SignUpElements'
+    } from './RegisterElements'
 
-const SignUp = () => {
+const RegisterPsico = () => {
     return (
         <Container>
             <FormWrap>
                 <Icon to='/'>MindSet</Icon>
                 <FormContent>
                     <Form action='#'>
-                        <FormH1> User Register</FormH1>
-                        <FormLabel htmlFor = 'for'>First Name</FormLabel>
+                        <FormH1>Psicologo Register</FormH1>
+                        <FormLabel htmlFor='for'>First Name</FormLabel>
                         <FormInput type='name' required />
-                        <FormLabel htmlFor = 'for'> Last Name</FormLabel>
+                        <FormLabel htmlFor='for'>Last Name</FormLabel>
                         <FormInput type='name' required />
                         <FormLabel htmlFor = 'for'>Email</FormLabel>
                         <FormInput type='email' required />
@@ -32,9 +30,11 @@ const SignUp = () => {
                         <FormInput type='password' required />
                         <FormLabel htmlFor = 'for'> Repeat Password</FormLabel>
                         <FormInput type='password' required />
+                        <FormLabel htmlFor = 'for'>Introduzca los archivos necesarios</FormLabel>
+                        <FormInput type='file' required />
                         <FormButton type='submit' to='/home' >Next</FormButton>
-                        <Text>Eres Psicologo Registrate aqui</Text>
-                        <Button to="/signup-psico">Registro Psicologos</Button>
+
+
                     </Form>
                 </FormContent>
             </FormWrap>
@@ -42,4 +42,4 @@ const SignUp = () => {
     )
 }
 
-export default SignUp
+export default RegisterPsico

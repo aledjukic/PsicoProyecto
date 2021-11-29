@@ -26,7 +26,7 @@ const Home = () => {
           <Hero  open={open}/>
           <Info {...homeObjOne}/>
           <Info {...homeObjTwo}/>
-          <Services/>
+          <Services open={open}/>
           <Info {...homeObjThree}/>
           <Footer />
         </>

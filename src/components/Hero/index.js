@@ -17,8 +17,8 @@ const Hero = ({open}) => {
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4'></VideoBg>
             </HeroBg>
             <HeroContent>
-                <HeroH1> Introduzca titulo aqui </HeroH1>
-                <HeroP> bla bla bla bla bla bla bla bla bla bla </HeroP>
+                <HeroH1> Dale una oportunidad a la terapia online </HeroH1>
+                <HeroP> Comienza a cambiar tu vida hoy, con esta oportunidad de recibir la ayuda que necesitas de manera privada y segura </HeroP>
                 <HeroBtnWrapper>
                    <Button to="/signup" onClick={open} onMouseEnter = {onHover} onMouseLeave={onHover}>
                        Get Started {hover ? <ArrowForward/> : <ArrowRight />}

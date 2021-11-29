@@ -3,10 +3,11 @@ import {ServicesContainer, ServicesH1,ServicesWrapper, ServicesCard, ServicesIco
 import Icon1 from '../../img/svg-1.svg'
 import Icon2 from '../../img/svg-2.svg'
 import Icon3 from '../../img/svg-3.svg'
+import { Button } from '../ButtonElements'
 
 
 
-const Services = () => {
+const Services = ({open}) => {
     return (
         <ServicesContainer id="services">
             <ServicesH1>Nuestros Psicologos</ServicesH1>
@@ -31,7 +32,18 @@ const Services = () => {
                     <ServicesH2> Inserte Titulo Aqui </ServicesH2>
                     <ServicesP>Inserte Subtitulo Aqui</ServicesP>
                 </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon src={Icon3} />
+                    <ServicesH2> Inserte Titulo Aqui </ServicesH2>
+                    <ServicesP>Inserte Subtitulo Aqui</ServicesP>
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon src={Icon1} />
+                    <ServicesH2> Inserte Titulo Aqui </ServicesH2>
+                    <ServicesP>Inserte Subtitulo Aqui</ServicesP>
+                </ServicesCard>
             </ServicesWrapper>
+            <Button to="search" onClick={open}>Ver mas Psicologos Online</Button>
         </ServicesContainer>
     )
 }
